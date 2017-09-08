@@ -1,8 +1,9 @@
 
-version=7.54.1
+
+version=7.55.1
 
 src_url=http://curl.haxx.se/download/curl-$version.tar.bz2
-src_url_sha1=f5193316e4b5ff23505cb09bc946763d35d02cd6
+src_url_sha1=76aabb69ec34e101f906132d12e983fb11547040
 
 pkg_configure () {
     local prefix
