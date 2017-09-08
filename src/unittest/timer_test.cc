@@ -17,10 +17,13 @@ int wait_array[simultaneous][waits] =
     { { 1, 1, 2, 3, 5, 13, 20, 30, 40, 8 },
       { 5, 3, 2, 40, 30, 20, 8, 13, 1, 1 } };
 
-#ifdef _WIN32
+#if defined(_WIN32)
 // Assuming a 15ms sleep resolution
 const int max_error_ms = 16;
 const int max_average_error_ms = 11;
+#elif defined(__APPLE__)
+const int max_error_ms = 15;
+const int max_average_error_ms = 8;
 #else
 const int max_error_ms = 5;
 const int max_average_error_ms = 2;
