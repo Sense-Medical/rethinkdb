@@ -5021,7 +5021,7 @@
 					"$(SRCROOT)/build/external/openssl_1.0.2l/include",
 					"$(SRCROOT)/build/external/re2_2015-11-01/include",
 					"$(SRCROOT)/build/external/v8_3.30.33.16-patched/include",
-					"$(SRCROOT)/build/external/curl_7.54.1/include",
+					"$(SRCROOT)/build/external/curl_7.55.1/include",
 					"$(SRCROOT)/build/external/lzfse_1.0/include",
 					"$(SRCROOT)/src",
 				);
@@ -5033,7 +5033,7 @@
 				OTHER_LDFLAGS = (
 					"-lz",
 					"$(SRCROOT)/build/external/re2_2015-11-01/lib/libre2.a",
-					"$(SRCROOT)/build/external/curl_7.54.1/lib/libcurl.a",
+					"$(SRCROOT)/build/external/curl_7.55.1/lib/libcurl.a",
 					"$(SRCROOT)/build/external/libidn_1.28/lib/libidn.a",
 					"$(SRCROOT)/build/external/v8_3.30.33.16-patched/lib/libv8_base.a",
 					"$(SRCROOT)/build/external/openssl_1.0.2l/lib/libssl.a",
@@ -5118,7 +5118,7 @@
 					"$(SRCROOT)/build/external/openssl_1.0.2l/include",
 					"$(SRCROOT)/build/external/re2_2015-11-01/include",
 					"$(SRCROOT)/build/external/v8_3.30.33.16-patched/include",
-					"$(SRCROOT)/build/external/curl_7.54.1/include",
+					"$(SRCROOT)/build/external/curl_7.55.1/include",
 					"$(SRCROOT)/build/external/lzfse_1.0/include",
 					"$(SRCROOT)/src",
 				);
@@ -5129,7 +5129,7 @@
 				OTHER_LDFLAGS = (
 					"-lz",
 					"$(SRCROOT)/build/external/re2_2015-11-01/lib/libre2.a",
-					"$(SRCROOT)/build/external/curl_7.54.1/lib/libcurl.a",
+					"$(SRCROOT)/build/external/curl_7.55.1/lib/libcurl.a",
 					"$(SRCROOT)/build/external/libidn_1.28/lib/libidn.a",
 					"$(SRCROOT)/build/external/v8_3.30.33.16-patched/lib/libv8_base.a",
 					"$(SRCROOT)/build/external/openssl_1.0.2l/lib/libssl.a",
