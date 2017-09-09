@@ -8,15 +8,10 @@ src_url_sha1=76aabb69ec34e101f906132d12e983fb11547040
 pkg_configure () {
     local prefix
     prefix="$(niceabspath "$install_dir")"
-    local ssl_command
-    ssl_command="--with-ssl"
-    if [[ "$OS" = "Darwin" ]]; then
-        ssl_command="--with-darwinssl --without-ssl --without-nghttp2"
-    fi
     if [[ "$CROSS_COMPILING" = 1 ]]; then
         configure_flags="--host=$($CXX -dumpmachine)"
     fi
-    in_dir "$build_dir" ./configure --prefix="$prefix" --without-gnutls $ssl_command --without-librtmp --disable-ldap --disable-shared ${configure_flags:-}
+    in_dir "$build_dir" ./configure --prefix="$prefix" --without-gnutls --with-ssl --without-darwinssl --without-nghttp2 --without-librtmp --disable-ldap --disable-shared ${configure_flags:-}
 }
 
 pkg_install-include () {
