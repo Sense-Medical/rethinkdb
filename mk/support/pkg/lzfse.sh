@@ -11,7 +11,7 @@ pkg_install-include () {
 
 pkg_install () {
     pkg_copy_src_to_build
-    pkg_make install prefix="$install_dir" CXXFLAGS="${CXXFLAGS:-} -O3" LDFLAGS="${LDFLAGS:-} $PTHREAD_LIBS"
+    INSTALL_PREFIX=$install_dir pkg_make install prefix="$install_dir" CXXFLAGS="${CXXFLAGS:-} -O3" LDFLAGS="${LDFLAGS:-} $PTHREAD_LIBS"
 
     mkdir -p "$install_dir/lib"
     cp "$build_dir/build/bin/liblzfse.a" "$install_dir/lib"
